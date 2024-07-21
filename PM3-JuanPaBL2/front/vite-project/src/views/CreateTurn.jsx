@@ -50,7 +50,7 @@ const CreateTurn = () => {
             time: hora,
             id: id
           };
-        const response = await axios.post('pm3-turnservice-backend-production.up.railway.app/turn/schedule', turnData)
+        const response = await axios.post('https://pm-3-turn-service-frontend-t68h.vercel.app/turn/schedule', turnData)
         setIsSuccess(true);
         setError(null);
     } catch (error) {

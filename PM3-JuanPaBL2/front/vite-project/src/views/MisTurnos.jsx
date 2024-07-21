@@ -21,7 +21,7 @@ export const MisTurnos = () => {
       // Si hay usuario logueado, obtener los turnos correspondientes al usuario
       const fetchData = async () => {
         try {
-          const response = await axios.get(`pm3-turnservice-backend-production.up.railway.app/users/${userGlobal.user.id}`);
+          const response = await axios.get(`https://pm-3-turn-service-frontend-t68h.vercel.app/users/${userGlobal.user.id}`);
           dispatch(saveUserAppointments(response.data.turnos));
          
         } catch (error) {
