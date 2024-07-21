@@ -6,7 +6,6 @@ import axios from "axios";
 const Turno = ({id, date, time, status}) => {
 
     const [cancelBoton, setCancelBoton] = useState(status);
-    console.log("id para cancelar", id);
 
     const handlerButton =  async () => {
         try {
@@ -14,6 +13,7 @@ const Turno = ({id, date, time, status}) => {
             setCancelBoton("cancelled");
         } catch (error) {
             alert(error)
+            console.log("error cancel", error);
         }   
     }
 
