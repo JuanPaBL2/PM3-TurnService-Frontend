@@ -9,7 +9,7 @@ const Turno = ({id, date, time, status}) => {
 
     const handlerButton =  async () => {
         try {
-            await axios.put(`http://localhost:3001/turn/cancel/${id}`);
+            await axios.put(`https://pm3-turnservice-backend-production.up.railway.app/turn/cancel/${id}`);
             setCancelBoton("cancelled");
         } catch (error) {
             alert(error)
