@@ -36,7 +36,7 @@ const Register = () => {
 
     try {
       // Realizar la solicitud POST al servidor
-      await axios.post('https://pm-3-turn-service-frontend-t68h.vercel.app/users/register', formData);
+      await axios.post('https://pm3-turnservice-backend-production.up.railway.app/users/register', formData);
       setIsSuccess(true);
       setError(null); // Reiniciar el error en caso de éxito
     } catch (error) {
